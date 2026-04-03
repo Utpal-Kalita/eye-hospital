@@ -84,25 +84,25 @@ export default function Gallery() {
 
     return (
         <div className="w-full">
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20">
 
                 {/* Header Section */}
                 <div className="mb-12 text-center">
-                    <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tight">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tight">
                         Our Facilities & Community Impact
                     </h1>
-                    <p className="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
+                    <p className="text-slate-600 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
                         A visual journey through our commitment to eye care excellence, advanced medical infrastructure, and outreach programs.
                     </p>
                 </div>
 
                 {/* Filterable Categories */}
-                <div className="flex flex-wrap justify-center gap-3 mb-10 md:mb-16">
+                <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 md:mb-16">
                     {filters.map((filter, index) => (
                         <button
                             key={index}
                             onClick={() => setActiveFilter(filter)}
-                            className={`px-6 py-2 rounded-full font-medium text-sm transition-all ${activeFilter === filter
+                            className={`px-4 sm:px-6 py-2 rounded-full font-medium text-xs sm:text-sm transition-all ${activeFilter === filter
                                 ? "bg-primary text-white shadow-md border border-primary"
                                 : "bg-white text-slate-700 border border-slate-200 hover:border-primary hover:text-primary"
                                 }`}
@@ -113,7 +113,7 @@ export default function Gallery() {
                 </div>
 
                 {/* Image Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
                     {filteredItems.map((item, idx) => (
                         <div key={idx} className={`group relative overflow-hidden rounded-xl bg-slate-200 cursor-pointer shadow-sm hover:shadow-xl transition-all ${item.aspect}`}>
                             <img
@@ -122,10 +122,10 @@ export default function Gallery() {
                                 src={item.image}
                                 loading="lazy"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 sm:p-6">
                                 <span className="text-accent text-xs font-bold uppercase tracking-wider mb-2">{item.subCategory}</span>
-                                <h3 className="text-white text-lg font-bold mb-1">{item.title}</h3>
-                                <p className="text-slate-200 text-sm leading-snug">{item.description}</p>
+                                <h3 className="text-white text-base sm:text-lg font-bold mb-1">{item.title}</h3>
+                                <p className="text-slate-200 text-xs sm:text-sm leading-snug">{item.description}</p>
                             </div>
                         </div>
                     ))}

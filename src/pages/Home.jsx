@@ -9,12 +9,12 @@ export default function Home() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative min-h-[600px] flex items-center overflow-hidden bg-primary">
+            <section className="relative min-h-[520px] md:min-h-[600px] flex items-center overflow-hidden bg-primary">
                 <div className="absolute inset-0 opacity-40">
                     <img alt="Modern Ophthalmic Surgical Suite" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG-vaI_Wy9jSzv1b3ky02X7N9FWbBiEzY32Zs9HQsl0-6rl9zgG2IMavi-zLa4xFX94l2TUX2wSSf6AaqYwNNntBj0d3yczVCZqbMPz_ibouZ-gFHNr1xjMJl7x6gMdk16_DdvSgj30p7SF0CGTsWn8Aozev1c72lORjbIqbcSfOsNgGi9YUnrSCBmfVaoZS9ll6U-M8nyaQ-75QdPmWyGRe5lEnxe33vJsY3CQCWjScHbyEjnXBXX8_RnA3pIBRvL_NjtSCnEzVQ" fetchpriority="high" loading="eager" />
                     <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
                 </div>
-                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20 w-full">
                     <div className="max-w-2xl text-white">
                         <span className="inline-block px-4 py-1.5 rounded-full bg-accent/20 border border-accent/30 text-accent font-semibold text-xs tracking-wider uppercase mb-6">
                             Trusted by 50,000+ Patients
@@ -61,7 +61,7 @@ export default function Home() {
                         <h3 className="text-3xl md:text-4xl font-bold text-slate-900">Specialized Eye Care Services</h3>
                         <p className="mt-4 text-slate-600 max-w-2xl mx-auto">Comprehensive solutions for all your visual health needs, from routine checkups to complex surgeries.</p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
                         {hospitalData.services.slice(0, 4).map(service => (
                             <ServiceCard key={service.id} service={service} />
                         ))}
@@ -97,7 +97,7 @@ export default function Home() {
                         <h2 className="text-primary text-sm font-bold tracking-[0.2em] uppercase mb-3">Testimonials</h2>
                         <h3 className="text-3xl md:text-4xl font-bold text-slate-900">Patient Stories</h3>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                         {hospitalData.testimonials.slice(0, 3).map(test => (
                             <TestimonialCard key={test.id} testimonial={test} />
                         ))}

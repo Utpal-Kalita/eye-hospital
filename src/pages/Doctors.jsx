@@ -31,21 +31,21 @@ const team = [
 
 export default function Doctors() {
     return (
-        <div className="flex flex-col flex-1 max-w-7xl mx-auto w-full px-6 lg:px-8 py-12">
+        <div className="flex flex-col flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 md:py-12">
             {/* Hero Header Section */}
             <div className="flex flex-col gap-4 mb-12">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary w-fit">
                     <span className="material-symbols-outlined text-sm">groups</span>
                     <span className="text-xs font-bold uppercase tracking-wider">Our Medical Team</span>
                 </div>
-                <h1 className="text-slate-900 text-4xl md:text-5xl font-black leading-tight tracking-tight">Meet Our Expert Ophthalmologists</h1>
-                <p className="text-slate-600 text-lg max-w-2xl leading-relaxed">
+                <h1 className="text-slate-900 text-3xl sm:text-4xl md:text-5xl font-black leading-tight tracking-tight">Meet Our Expert Ophthalmologists</h1>
+                <p className="text-slate-600 text-base sm:text-lg max-w-2xl leading-relaxed">
                     Our world-class team of specialists is dedicated to providing the highest quality eye care with precision, advanced technology, and compassionate support.
                 </p>
             </div>
 
             {/* Doctor Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 mb-16 md:mb-20">
                 {team.map((doc, idx) => (
                     <div key={idx} className="flex flex-col group">
                         <div className="relative w-full aspect-[3/4] overflow-hidden rounded-xl mb-4 bg-slate-200">
@@ -71,8 +71,8 @@ export default function Doctors() {
             </div>
 
             {/* Clinical Philosophy Section */}
-            <div className="bg-primary/5 rounded-xl overflow-hidden border border-primary/10 p-8 md:p-12 mb-20 shadow-sm">
-                <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="bg-primary/5 rounded-xl overflow-hidden border border-primary/10 p-6 sm:p-8 md:p-12 mb-16 md:mb-20 shadow-sm">
+                <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
                     <div className="w-full lg:w-1/2">
                         <div className="relative rounded-lg overflow-hidden shadow-xl border-4 border-white">
                             <img className="w-full h-auto" alt="Modern eye diagnostic equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-hbze33sdvwmsqSe-aYWUISoeX7XWPS5_LC7koc_eVLovLjlderGM9W9GSj4e1eOG85YGBzYHwU_fjF51ACk9ez99MMXg7qGOcilRmP3pdDJ6CCez6TNRUJbund0UlXCmgkBVNl49dGiooKx9ZPbj1ApLRUae6LTvgWij9UGnzSDypBUxUAFTMZ4GB9lvWf0jFK5J3b0HdWsPEuzU6sUuqhtIWGGirl6Y1ipNYOcOV6ud3UpF3tb8c3LRfgvfr_3q2lrnIYzI8I8" loading="lazy" />
@@ -80,11 +80,11 @@ export default function Doctors() {
                         </div>
                     </div>
                     <div className="w-full lg:w-1/2 flex flex-col gap-6">
-                        <h2 className="text-slate-900 text-3xl font-bold leading-tight">Patient-First Clinical Approach</h2>
-                        <p className="text-slate-600 text-lg leading-relaxed">
+                        <h2 className="text-slate-900 text-2xl sm:text-3xl font-bold leading-tight">Patient-First Clinical Approach</h2>
+                        <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
                             At Nalbari Eye Hospital, we prioritize your vision above all else. Our approach combines cutting-edge technology with empathetic care to ensure the best possible outcomes for every patient.
                         </p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div className="flex gap-4">
                                 <span className="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">verified_user</span>
                                 <div>
@@ -110,21 +110,21 @@ export default function Doctors() {
             </div>
 
             {/* Call to Action */}
-            <div className="relative bg-slate-900 rounded-2xl p-10 md:p-16 text-center overflow-hidden">
+            <div className="relative bg-slate-900 rounded-2xl p-6 sm:p-10 md:p-16 text-center overflow-hidden">
                 <div className="absolute inset-0 opacity-20 pointer-events-none">
                     <div className="w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-transparent to-transparent"></div>
                 </div>
                 <div className="relative z-10 flex flex-col items-center gap-6 max-w-2xl mx-auto">
-                    <h2 className="text-white text-3xl md:text-4xl font-bold">Ready to see the world more clearly?</h2>
-                    <p className="text-slate-300 text-lg">Schedule your comprehensive eye examination with our specialists today. Same-day appointments available for emergencies.</p>
-                    <div className="flex flex-wrap justify-center gap-4 pt-4">
+                    <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">Ready to see the world more clearly?</h2>
+                    <p className="text-slate-300 text-base sm:text-lg">Schedule your comprehensive eye examination with our specialists today. Same-day appointments available for emergencies.</p>
+                    <div className="flex flex-col sm:flex-row w-full sm:w-auto justify-center gap-4 pt-4">
                         <Link to="/contact">
-                            <button className="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-accent text-white text-lg font-bold hover:scale-105 transition-transform shadow-lg shadow-accent/20">
+                            <button className="flex w-full sm:min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-accent text-white text-lg font-bold hover:scale-105 transition-transform shadow-lg shadow-accent/20">
                                 Book Now
                             </button>
                         </Link>
                         <Link to="/contact">
-                            <button className="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 border-2 border-slate-700 text-white text-lg font-bold hover:bg-slate-800 transition-colors">
+                            <button className="flex w-full sm:min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 border-2 border-slate-700 text-white text-lg font-bold hover:bg-slate-800 transition-colors">
                                 Call Hospital
                             </button>
                         </Link>
