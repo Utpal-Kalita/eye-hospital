@@ -69,7 +69,7 @@ export default function Footer() {
                 {/* Google Maps Integration */}
                 <div className="mb-10 sm:mb-12 relative rounded-xl overflow-hidden shadow-lg border border-white/10 bg-slate-900/50 group">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114093.00392994464!2d91.35334465492476!3d26.43828975553066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375e630009c95d97%3A0xcda8ddb37244955f!2sNalbari%2C%20Assam!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14289.250331085641!2d91.41672035529108!3d26.445651330855146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375bcc9fd2fbcda9%3A0xba0b20d80ca7869e!2sNalbari%20Eye%20Hospital%20%2F%20Best%20Eye%20Hospital%20in%20lower%20ASSAM!5e0!3m2!1sen!2sin!4v1775210399656!5m2!1sen!2sin" 
                         width="100%" 
                         height="300" 
                         style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) brightness(80%) contrast(80%)" }} 
