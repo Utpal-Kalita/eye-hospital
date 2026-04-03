@@ -67,18 +67,31 @@ export default function Footer() {
                 </div>
 
                 {/* Google Maps Integration */}
-                <div className="mb-10 sm:mb-12 rounded-xl overflow-hidden shadow-lg border border-white/10 bg-slate-900/50">
+                <div className="mb-10 sm:mb-12 relative rounded-xl overflow-hidden shadow-lg border border-white/10 bg-slate-900/50 group">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114093.00392994464!2d91.35334465492476!3d26.43828975553066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375e630009c95d97%3A0xcda8ddb37244955f!2sNalbari%2C%20Assam!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin" 
                         width="100%" 
-                        height="250" 
+                        height="300" 
                         style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) brightness(80%) contrast(80%)" }} 
                         allowFullScreen="" 
                         loading="lazy" 
                         referrerPolicy="no-referrer-when-downgrade"
                         title="Nalbari Eye Hospital Location Map"
-                        className="w-full"
+                        className="w-full transition-opacity duration-300 group-hover:opacity-80"
                     ></iframe>
+                    
+                    {/* Get Directions Overlay */}
+                    <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
+                        <a 
+                            href="https://maps.app.goo.gl/zQqFC62hs4kiK4466" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="pointer-events-auto bg-accent hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-full shadow-2xl flex items-center gap-2 transform transition-all duration-300 hover:scale-105 border-2 border-white/20"
+                        >
+                            <span className="material-symbols-outlined text-[20px]">directions</span>
+                            Get Directions
+                        </a>
+                    </div>
                 </div>
 
                 <div className="border-t border-white/10 pt-10 text-center text-slate-400 text-xs">
