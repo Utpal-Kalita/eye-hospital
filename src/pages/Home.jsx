@@ -58,8 +58,8 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-primary text-sm font-bold tracking-[0.2em] uppercase mb-3">Our Expertise</h2>
-                        <h3 className="text-3xl md:text-4xl font-bold text-white">Specialized Eye Care Services</h3>
-                        <p className="mt-4 text-slate-200 max-w-2xl mx-auto">Comprehensive solutions for all your visual health needs, from routine checkups to complex surgeries.</p>
+                        <h3 className="text-3xl md:text-4xl font-bold text-slate-900">Specialized Eye Care Services</h3>
+                        <p className="mt-4 text-slate-600 max-w-2xl mx-auto">Comprehensive solutions for all your visual health needs, from routine checkups to complex surgeries.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {hospitalData.services.slice(0, 4).map(service => (
@@ -75,8 +75,8 @@ export default function Home() {
                     <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
                         <div className="max-w-xl">
                             <h2 className="text-primary text-sm font-bold tracking-[0.2em] uppercase mb-3 text-left">Our Team</h2>
-                            <h3 className="text-3xl md:text-4xl font-bold text-white">Lead Ophthalmic Surgeons</h3>
-                            <p className="mt-4 text-slate-200">Our surgeons are world-trained experts committed to restoring and preserving your sight.</p>
+                            <h3 className="text-3xl md:text-4xl font-bold text-slate-900">Lead Ophthalmic Surgeons</h3>
+                            <p className="mt-4 text-slate-600">Our surgeons are world-trained experts committed to restoring and preserving your sight.</p>
                         </div>
                         <Link to="/doctors" className="text-primary font-bold border-b-2 border-primary pb-1 flex items-center gap-2 self-start">
                             Meet All Doctors <span className="material-symbols-outlined">group</span>
@@ -95,7 +95,7 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-primary text-sm font-bold tracking-[0.2em] uppercase mb-3">Testimonials</h2>
-                        <h3 className="text-3xl md:text-4xl font-bold text-white">Patient Stories</h3>
+                        <h3 className="text-3xl md:text-4xl font-bold text-slate-900">Patient Stories</h3>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {hospitalData.testimonials.slice(0, 3).map(test => (
