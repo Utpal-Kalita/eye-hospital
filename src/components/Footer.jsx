@@ -66,6 +66,21 @@ export default function Footer() {
 
                 </div>
 
+                {/* Google Maps Integration */}
+                <div className="mb-10 sm:mb-12 rounded-xl overflow-hidden shadow-lg border border-white/10 bg-slate-900/50">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114093.00392994464!2d91.35334465492476!3d26.43828975553066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375e630009c95d97%3A0xcda8ddb37244955f!2sNalbari%2C%20Assam!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="250" 
+                        style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) brightness(80%) contrast(80%)" }} 
+                        allowFullScreen="" 
+                        loading="lazy" 
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Nalbari Eye Hospital Location Map"
+                        className="w-full"
+                    ></iframe>
+                </div>
+
                 <div className="border-t border-white/10 pt-10 text-center text-slate-400 text-xs">
                     <p>© {new Date().getFullYear()} Nalbari Eye Hospital. All rights reserved. Designed for Excellence.</p>
                 </div>
