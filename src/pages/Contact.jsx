@@ -28,7 +28,6 @@ export default function Contact() {
                                 <div>
                                     <p className="text-sm font-bold text-slate-500 uppercase tracking-wider">Phone</p>
                                     <p className="text-lg font-semibold text-slate-800">{hospitalData.contactInfo.phones[0]}</p>
-                                    <p className="text-sm text-slate-500">Emergency: {hospitalData.contactInfo.emergency}</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
@@ -111,22 +110,6 @@ export default function Contact() {
                             <span className="material-symbols-outlined">arrow_forward</span>
                         </button>
                     </form>
-                </div>
-            </div>
-
-            {/* Emergency Info Section */}
-            <div className="bg-red-50 border-2 border-red-100 rounded-2xl p-6 sm:p-8 mb-16 flex flex-col md:flex-row items-center gap-6 sm:gap-8">
-                <div className="bg-red-600 text-white p-4 sm:p-5 rounded-full animate-pulse flex-shrink-0">
-                    <span className="material-symbols-outlined text-3xl sm:text-4xl leading-none">e911_emergency</span>
-                </div>
-                <div className="flex-1 text-center md:text-left">
-                    <h3 className="text-red-800 text-xl sm:text-2xl font-black mb-2 uppercase tracking-tight">Eye Emergency or Trauma?</h3>
-                    <p className="text-red-700/80 text-base sm:text-lg">Chemical splashes, sudden vision loss, or direct impact injuries require immediate attention. Our trauma unit is ready 24/7.</p>
-                </div>
-                <div className="flex flex-col gap-2 w-full md:w-auto md:min-w-[200px]">
-                    <a className="bg-red-600 text-white px-6 py-3 rounded-lg font-bold text-center hover:bg-red-700 transition-colors shadow-md" href={`tel:${hospitalData.contactInfo.emergency}`}>
-                        Call Emergency Room
-                    </a>
                 </div>
             </div>
 

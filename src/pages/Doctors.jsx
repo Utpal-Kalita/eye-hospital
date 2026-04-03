@@ -125,7 +125,7 @@ export default function Doctors() {
                         </Link>
                         <Link to="/contact">
                             <button className="flex w-full sm:min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 border-2 border-slate-700 text-white text-lg font-bold hover:bg-slate-800 transition-colors">
-                                Call Hospital
+                                View Contact Details
                             </button>
                         </Link>
                     </div>

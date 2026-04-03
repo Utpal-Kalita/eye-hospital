@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <footer className="bg-primary text-white pt-16 pb-8 sm:pt-20 sm:pb-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-12 sm:mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-12 sm:mb-16">
 
                     <div>
                         <div className="flex items-center gap-3 mb-5 sm:mb-6">
@@ -56,7 +56,7 @@ export default function Footer() {
                         <h4 className="font-bold text-lg mb-5 sm:mb-6 !text-white">Working Hours</h4>
                         <ul className="space-y-2 text-slate-300 text-sm">
                             {hospitalData.workingHours.map((wh, index) => (
-                                <li key={index} className={`flex justify-between ${wh.isEmergency ? 'text-accent font-bold pt-2' : 'border-b border-white/10 pb-2'}`}>
+                                <li key={index} className="flex justify-between border-b border-white/10 pb-2">
                                     <span>{wh.day}</span>
                                     <span>{wh.hours}</span>
                                 </li>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { hospitalData } from '../data/mockData';
 
 export default function Header() {
     const location = useLocation();
@@ -42,10 +41,6 @@ export default function Header() {
                     </nav>
 
                     <div className="hidden md:flex items-center gap-3 lg:gap-4">
-                        <a className="hidden lg:flex items-center gap-2 text-primary font-bold" href={`tel:${hospitalData.contactInfo.emergency}`}>
-                            <span className="material-symbols-outlined">call</span>
-                            <span>Emergency: {hospitalData.contactInfo.emergency}</span>
-                        </a>
                         <Link to="/contact">
                             <button className="bg-accent hover:bg-amber-600 text-white px-4 sm:px-6 py-2.5 rounded-lg font-bold text-xs sm:text-sm transition-all shadow-lg shadow-accent/20">
                                 Book Appointment
@@ -77,13 +72,6 @@ export default function Header() {
                                 {link.name}
                             </Link>
                         ))}
-                        <a
-                            className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold text-primary hover:bg-primary/5"
-                            href={`tel:${hospitalData.contactInfo.emergency}`}
-                        >
-                            <span className="material-symbols-outlined text-base">call</span>
-                            Emergency: {hospitalData.contactInfo.emergency}
-                        </a>
                         <Link to="/contact" onClick={() => setMenuOpen(false)}>
                             <button className="w-full bg-accent hover:bg-amber-600 text-white px-4 py-3 rounded-lg font-bold text-sm transition-all shadow-lg shadow-accent/20">
                                 Book Appointment

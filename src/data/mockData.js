@@ -2,19 +2,17 @@ export const hospitalData = {
     contactInfo: {
         address: "Hajo Road, Nalbari Town,\nNalbari, Assam - 781335",
         phones: ["+91 98765 43210", "+91 3624 220123"],
-        email: "info@nalbarieye.com",
-        emergency: "108"
+        email: "info@nalbarieye.com"
     },
     workingHours: [
         { day: "Mon - Sat", hours: "09:00 AM - 08:00 PM" },
-        { day: "Sunday", hours: "10:00 AM - 02:00 PM" },
-        { day: "Emergency", hours: "24 Hours Available", isEmergency: true }
+        { day: "Sunday", hours: "10:00 AM - 02:00 PM" }
     ],
     stats: [
         { value: "10k+", label: "Successful Surgeries" },
         { value: "20+", label: "Years Experience" },
         { value: "15+", label: "Lead Specialists" },
-        { value: "24/7", label: "Emergency Care" }
+        { value: "24/7", label: "Patient Support" }
     ],
     services: [
         {
